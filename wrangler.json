@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "mute-bush-81f8",
+	"name": "portfolio",
 	"compatibility_date": "2025-10-08",
 	"compatibility_flags": [
 		"nodejs_compat"
