@@ -71,14 +71,17 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<section id="projects" class="section">
 				<h2 class="section-heading"><span class="prompt">//</span> Projects</h2>
 				<div class="project-grid">
-					<article class="project-card">
+					<a href="https://github.com/alecpullen/bezel" target="_blank" rel="noopener noreferrer" class="project-card">
 						<div class="card-image">
-							<img src="/projects/bezel.png" alt="Bezel screenshot" />
+							<div class="carousel-track">
+								<img src="/projects/bezel/demo.png" alt="Bezel compositor demo" data-label="Shell Demo" />
+							</div>
+							<span class="image-label">Shell Demo</span>
 						</div>
 						<div class="card-content">
 							<div class="card-body">
 								<h3 class="card-title">Bezel</h3>
-								<p class="card-desc">A Wayland compositor shell built from scratch with a custom OpenGL rendering pipeline. Includes Tuner, a companion Go CLI and TUI for system configuration.</p>
+								<p class="card-desc">A Wayland shell layer built over MangoWC with a custom OpenGL rendering pipeline, providing a full desktop environment surface.</p>
 							</div>
 							<div class="card-footer">
 								<span class="badge">C++</span>
@@ -87,32 +90,28 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 								<span class="badge">Go</span>
 							</div>
 						</div>
-					</article>
+					</a>
 
 					<article class="project-card">
 						<div class="card-image">
-							<img src="/projects/marshal.png" alt="Marshal screenshot" />
-						</div>
-						<div class="card-content">
-							<div class="card-body">
-								<h3 class="card-title">Marshal</h3>
-								<p class="card-desc">An AI-assisted swarm coding tool with a terminal UI for coordinating multi-agent code generation tasks across a codebase.</p>
+							<div class="carousel-track">
+								<img src="/projects/eventdesk/operator.png" alt="EventDesk operator dashboard" data-label="Operator Portal" />
+								<img src="/projects/eventdesk/staff.png" alt="EventDesk staff portal" data-label="Staff Portal" />
+								<img src="/projects/eventdesk/client.png" alt="EventDesk client portal" data-label="Client Portal" />
 							</div>
-							<div class="card-footer">
-								<span class="badge">Go</span>
-								<span class="badge">TUI</span>
+							<button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+							<button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+							<div class="carousel-dots">
+								<button class="dot active" aria-label="Image 1"></button>
+								<button class="dot" aria-label="Image 2"></button>
+								<button class="dot" aria-label="Image 3"></button>
 							</div>
-						</div>
-					</article>
-
-					<article class="project-card">
-						<div class="card-image">
-							<img src="/projects/eventdesk.png" alt="EventDesk screenshot" />
+							<span class="image-label">Operator Portal</span>
 						</div>
 						<div class="card-content">
 							<div class="card-body">
 								<h3 class="card-title">EventDesk</h3>
-								<p class="card-desc">A CRM built for an AV company to manage clients, events, and equipment inventory end-to-end.</p>
+								<p class="card-desc">A customer relations platform for AV company operators to manage events, media files, crew assignments, and incident response across their entire client lifecycle.</p>
 							</div>
 							<div class="card-footer">
 								<span class="badge">Vite</span>
@@ -122,14 +121,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 						</div>
 					</article>
 
-					<article class="project-card">
+					<a href="https://github.com/alecpullen/horizondata" target="_blank" rel="noopener noreferrer" class="project-card">
 						<div class="card-image">
-							<img src="/projects/horizon.png" alt="Horizon Data screenshot" />
+							<div class="carousel-track">
+								<img src="/projects/horizon/teacher.png" alt="Horizon Data teacher bookings" data-label="Teacher View" />
+								<img src="/projects/horizon/admin.png" alt="Horizon Data admin dashboard" data-label="Admin Dashboard" />
+							</div>
+							<button class="carousel-btn carousel-prev" aria-label="Previous">&#8249;</button>
+							<button class="carousel-btn carousel-next" aria-label="Next">&#8250;</button>
+							<div class="carousel-dots">
+								<button class="dot active" aria-label="Image 1"></button>
+								<button class="dot" aria-label="Image 2"></button>
+							</div>
+							<span class="image-label">Teacher View</span>
 						</div>
 						<div class="card-content">
 							<div class="card-body">
 								<h3 class="card-title">Horizon Data</h3>
-								<p class="card-desc">University capstone — a data visualization web app for exploring and analyzing large datasets.</p>
+								<p class="card-desc">University capstone project: a web app designed to spark interest in STEM and astronomy among Year 8+ high school students through interactive data and engagement tools.</p>
 							</div>
 							<div class="card-footer">
 								<span class="badge">Vite</span>
@@ -137,11 +146,29 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 								<span class="badge">Python</span>
 							</div>
 						</div>
-					</article>
+					</a>
 
-					<article class="project-card">
+					<a href="https://github.com/alecpullen/marshal" target="_blank" rel="noopener noreferrer" class="project-card">
 						<div class="card-image">
-							<img src="/projects/msgapp.png" alt="msgApp screenshot" />
+							<div class="carousel-track">
+								<img src="/projects/marshal/marshal.png" alt="Marshal TUI" data-label="Marshal TUI" />
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="card-body">
+								<h3 class="card-title">Marshal</h3>
+								<p class="card-desc">An AI coding assistant with multi-model orchestration and git-native workflows. Uses a four-role architecture (orchestrator, executor, critic, compactor) with branch-isolated task execution, tree-sitter repo mapping, and a conversational TUI.</p>
+							</div>
+							<div class="card-footer">
+								<span class="badge">Go</span>
+								<span class="badge">TUI</span>
+							</div>
+						</div>
+					</a>
+
+					<a href="https://github.com/alecpullen/msgApp" target="_blank" rel="noopener noreferrer" class="project-card">
+						<div class="card-image">
+							<div class="carousel-track"></div>
 						</div>
 						<div class="card-content">
 							<div class="card-body">
@@ -153,7 +180,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 								<span class="badge">SwiftUI</span>
 							</div>
 						</div>
-					</article>
+					</a>
 				</div>
 			</section>
 
@@ -181,7 +208,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <style>
 	/* ── Layout ── */
 	main {
-		max-width: 860px;
+		max-width: 960px;
 		margin: 0 auto;
 		padding: 0 2rem 4rem;
 	}
@@ -313,32 +340,120 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	.project-grid {
 		display: flex;
 		flex-direction: column;
-		gap: 1rem;
+		gap: 2rem;
+	}
+	a.project-card {
+		text-decoration: none;
+		color: inherit;
+		cursor: pointer;
 	}
 	.project-card {
-		display: grid;
-		grid-template-columns: 240px 1fr;
+		display: flex;
+		flex-direction: column;
 		background: var(--card-bg);
 		border: 1px solid var(--border-color);
 		border-radius: 4px;
 		overflow: hidden;
 		transition: border-color 0.15s;
-		min-height: 160px;
 	}
 	.project-card:hover {
 		border-color: var(--accent);
 	}
 	.card-image {
-		border-right: 1px solid var(--border-color);
+		aspect-ratio: 8 / 5;
 		background: #0c0e14;
 		overflow: hidden;
+		border-bottom: 1px solid var(--border-color);
+		position: relative;
 	}
-	.card-image img {
+	.carousel-track {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		transition: transform 0.25s ease;
+	}
+	.carousel-track img {
+		min-width: 100%;
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		object-position: top left;
 		display: block;
-		opacity: 0.9;
+		flex-shrink: 0;
+	}
+	.carousel-btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background: rgba(0, 0, 0, 0.5);
+		color: rgb(var(--black));
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		border-radius: 3px;
+		width: 2rem;
+		height: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+		font-size: 1.25rem;
+		line-height: 1;
+		z-index: 10;
+		opacity: 0;
+		transition: opacity 0.2s ease, background 0.15s;
+		font-family: var(--font-mono);
+	}
+	.carousel-btn:hover {
+		background: rgba(0, 0, 0, 0.75);
+	}
+	.project-card:hover .carousel-btn,
+	.project-card:hover .carousel-dots,
+	.project-card:hover .image-label {
+		opacity: 1;
+	}
+	.carousel-prev { left: 0.6rem; }
+	.carousel-next { right: 0.6rem; }
+	.carousel-dots {
+		position: absolute;
+		bottom: 0.6rem;
+		left: 50%;
+		transform: translateX(-50%);
+		display: flex;
+		gap: 0.4rem;
+		z-index: 10;
+		opacity: 0;
+		transition: opacity 0.2s ease;
+	}
+	.dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: rgba(255, 255, 255, 0.35);
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		transition: background 0.15s;
+	}
+	.dot.active {
+		background: rgb(var(--black));
+	}
+	.image-label {
+		position: absolute;
+		bottom: 0.6rem;
+		left: 0.6rem;
+		background: rgba(0, 0, 0, 0.55);
+		color: rgb(var(--gray-dark));
+		font-size: 0.68rem;
+		font-weight: 500;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		padding: 0.2rem 0.55rem;
+		border-radius: 2px;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		pointer-events: none;
+		z-index: 10;
+		backdrop-filter: blur(4px);
+		opacity: 0;
+		transition: opacity 0.2s ease;
 	}
 	.card-content {
 		display: flex;
@@ -355,10 +470,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		margin: 0 0 0.5rem;
 	}
 	.card-desc {
-		font-size: 0.82rem;
+		font-size: 0.85rem;
 		color: rgb(var(--gray-dark));
 		line-height: 1.6;
 		margin: 0;
+		max-width: 72ch;
 	}
 	.card-footer {
 		padding: 0.75rem 1.5rem;
@@ -411,16 +527,34 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 	/* ── Responsive ── */
 	@media (max-width: 640px) {
-		.project-card {
-			grid-template-columns: 1fr;
-			grid-template-rows: 180px auto;
-		}
-		.card-image {
-			border-right: none;
-			border-bottom: 1px solid var(--border-color);
-		}
 		.hero h1 {
 			font-size: 2rem;
 		}
 	}
 </style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.card-image').forEach(card => {
+    const track = card.querySelector<HTMLElement>('.carousel-track');
+    const dots = card.querySelectorAll<HTMLElement>('.dot');
+    const prev = card.querySelector<HTMLButtonElement>('.carousel-prev');
+    const next = card.querySelector<HTMLButtonElement>('.carousel-next');
+    const label = card.querySelector<HTMLElement>('.image-label');
+    if (!track || !prev || !next || dots.length === 0) return;
+
+    const imgs = track.querySelectorAll<HTMLImageElement>('img');
+    const total = dots.length;
+    let index = 0;
+
+    function goTo(n: number) {
+      index = (n + total) % total;
+      track!.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === index));
+      if (label) label.textContent = imgs[index]?.dataset.label ?? '';
+    }
+
+    prev.addEventListener('click', (e) => { e.preventDefault(); goTo(index - 1); });
+    next.addEventListener('click', (e) => { e.preventDefault(); goTo(index + 1); });
+    dots.forEach((dot, i) => dot.addEventListener('click', (e) => { e.preventDefault(); goTo(i); }));
+  });
+</script>
