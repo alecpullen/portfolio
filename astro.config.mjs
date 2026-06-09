@@ -10,6 +10,8 @@ export default defineConfig({
 	site: "https://example.com",
 	integrations: [mdx(), sitemap()],
 	adapter: cloudflare({
+		configPath: "./wrangler.dev.json",
+		prerenderEnvironment: "node",
 		platformProxy: {
 			enabled: true,
 		},
