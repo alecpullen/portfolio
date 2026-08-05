@@ -71,6 +71,24 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 			<section id="projects" class="section">
 				<h2 class="section-heading"><span class="prompt">//</span> Projects</h2>
 				<div class="project-grid">
+					<a href="https://github.com/alecpullen/marshal" target="_blank" rel="noopener noreferrer" class="project-card">
+						<div class="card-image">
+							<div class="carousel-track">
+								<img src="/projects/marshal/marshal.png" alt="Marshal TUI" data-label="Marshal TUI" />
+							</div>
+						</div>
+						<div class="card-content">
+							<div class="card-body">
+								<h3 class="card-title">Marshal</h3>
+								<p class="card-desc">A terminal-native AI coding agent with local-friendly defaults and provider choice: Ollama, LM Studio, or any OpenAI-compatible endpoint. Features tree-sitter repository intelligence, role-based model routing, sandboxed tool execution, a multi-agent swarm runtime, and an MCP/plugin ecosystem.</p>
+							</div>
+							<div class="card-footer">
+								<span class="badge">Go</span>
+								<span class="badge">TUI</span>
+							</div>
+						</div>
+					</a>
+
 					<a href="https://github.com/alecpullen/bezel" target="_blank" rel="noopener noreferrer" class="project-card">
 						<div class="card-image">
 							<div class="carousel-track">
@@ -144,24 +162,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 								<span class="badge">Vite</span>
 								<span class="badge">Flask</span>
 								<span class="badge">Python</span>
-							</div>
-						</div>
-					</a>
-
-					<a href="https://github.com/alecpullen/marshal" target="_blank" rel="noopener noreferrer" class="project-card">
-						<div class="card-image">
-							<div class="carousel-track">
-								<img src="/projects/marshal/marshal.png" alt="Marshal TUI" data-label="Marshal TUI" />
-							</div>
-						</div>
-						<div class="card-content">
-							<div class="card-body">
-								<h3 class="card-title">Marshal</h3>
-								<p class="card-desc">An AI coding assistant with multi-model orchestration and git-native workflows. Uses a four-role architecture (orchestrator, executor, critic, compactor) with branch-isolated task execution, tree-sitter repo mapping, and a conversational TUI.</p>
-							</div>
-							<div class="card-footer">
-								<span class="badge">Go</span>
-								<span class="badge">TUI</span>
 							</div>
 						</div>
 					</a>
@@ -475,7 +475,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		color: rgb(var(--gray-dark));
 		line-height: 1.6;
 		margin: 0;
-		max-width: 72ch;
 	}
 	.card-footer {
 		padding: 0.75rem 1.5rem;
