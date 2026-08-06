@@ -166,18 +166,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 						</div>
 					</a>
 
-					<a href="https://github.com/alecpullen/msgApp" target="_blank" rel="noopener noreferrer" class="project-card">
+					<a href="https://github.com/alecpullen/local-email-manager" target="_blank" rel="noopener noreferrer" class="project-card">
 						<div class="card-image">
-							<div class="carousel-track"></div>
+							<div class="carousel-track">
+								<img src="/projects/local-email-manager/diagram.svg" alt="LEM architecture diagram" data-label="Architecture" />
+							</div>
 						</div>
 						<div class="card-content">
 							<div class="card-body">
-								<h3 class="card-title">msgApp</h3>
-								<p class="card-desc">A secure end-to-end encrypted messaging app for iOS with a native SwiftUI interface.</p>
+								<h3 class="card-title">LEM</h3>
+								<p class="card-desc">A self-hosted Go daemon that monitors Gmail accounts, classifies incoming email with a local LLM, and sends concise alerts to Signal. Email bodies stay in memory and never touch disk.</p>
 							</div>
 							<div class="card-footer">
-								<span class="badge">Swift</span>
-								<span class="badge">SwiftUI</span>
+								<span class="badge">Go</span>
+								<span class="badge">SQLite</span>
+								<span class="badge">Ollama</span>
 							</div>
 						</div>
 					</a>
